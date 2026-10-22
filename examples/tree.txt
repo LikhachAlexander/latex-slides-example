@@ -1,0 +1,10 @@
+project/
+|-- main.tex          <- главный файл
+|-- preamble.tex      <- настройки
+|-- slides/
+|   |-- intro.tex
+|   |-- methods.tex
+|   `-- results.tex
+`-- images/
+    |-- diagram.pdf
+    `-- plot.pdf

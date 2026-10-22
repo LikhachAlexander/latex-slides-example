@@ -1,0 +1,53 @@
+% ============================================================
+% preamble.tex --- настройки презентации (minted edition)
+% ============================================================
+
+% --- Шрифты и язык (pdfLaTeX) ---
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+
+% --- Дополнительные пакеты ---
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{mwe}       % example-image-a/b для примеров
+\usepackage{qrcode}    % QR-код на заключительном слайде
+
+% --- Тема оформления ---
+\usetheme{Boadilla}
+\setbeamertemplate{frame numbering}[fraction]
+
+% --- Подсветка кода (minted) ---
+\usepackage{minted}
+
+% Настройка цветов для фона (по желанию)
+\definecolor{codebg}{HTML}{F8F8F8}
+\definecolor{codegray}{HTML}{808080}
+
+% Глобальные настройки minted
+\setminted{
+  bgcolor=codebg,
+  fontsize=\footnotesize,
+  frame=single,
+  framesep=3mm,
+  rulecolor=\color{codegray},
+  breaklines=true,
+  linenos=false,
+  tabsize=2
+}
+
+% --- Удобная команда для inline-кода ---
+\newcommand{\cmd}[1]{\texttt{\textbackslash #1}}
+
+% --- Заметки докладчика ---
+% Раскомментируйте ОДНУ из строк, чтобы увидеть \note в PDF:
+% \setbeameroption{show notes}
+% \setbeameroption{show notes on second screen=right}
+
+% --- Метаданные ---
+\title{Презентации в \LaTeX{}}
+\subtitle{Методологии и технологии научно-исследовательской деятельности}
+\author{Лихач Александр}
+\institute{Кафедра ПМИ}
+\date{Аспирантский семинар, \today}

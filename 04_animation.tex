@@ -1,0 +1,39 @@
+% ---------- Слайд 11: \pause ----------
+\begin{frame}[fragile,label=pause]{Поэтапный вывод: \cmd{pause}}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.52\textwidth}
+      \textbf{Исходный код:}
+      \vspace{0.2em}
+      \inputminted[fontsize=\scriptsize, frame=single, breaklines=true]{latex}{examples/pause.tex}
+
+    \column{0.44\textwidth}
+      \textbf{Результат (листайте слайды):}
+      \vspace{0.2em}
+      \begin{block}{}
+        \input{examples/pause.tex}
+      \end{block}
+  \end{columns}
+  \note{Типичная ошибка --- показать весь слайд сразу. \cmd{pause} синхронизирует восприятие.}
+\end{frame}
+
+% ---------- Слайд 12: Спецификаторы <...> ----------
+\begin{frame}[fragile,label=overlays]{Управление видимостью: \texttt{<...>}}
+  \begin{columns}[T,onlytextwidth]
+    % --- ЛЕВАЯ КОЛОНКА: КОД ---
+    \column{0.52\textwidth}
+      \textbf{Исходный код:}
+      \vspace{0.2em}
+      \inputminted[fontsize=\scriptsize, frame=single, breaklines=true]{latex}{examples/overlays.tex}
+
+    % --- ПРАВАЯ КОЛОНКА: РЕЗУЛЬТАТ ---
+    \column{0.44\textwidth}
+      \textbf{Результат (листайте слайды):}
+      \vspace{0.2em}
+      \begin{block}{}
+        \input{examples/overlays.tex}
+      \end{block}
+  \end{columns}
+  \note{Спецификаторы <...> обеспечивают точечное управление
+  видимостью. Например, \cmd{alert<2>\{текст\}} выделяет текст
+  только на втором шаге.}
+\end{frame}

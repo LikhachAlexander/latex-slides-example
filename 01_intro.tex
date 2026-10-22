@@ -1,0 +1,60 @@
+% ---------- Слайд 2: Что такое LaTeX ----------
+\begin{frame}[label=what-is-latex]{Что такое \LaTeX}
+  \begin{block}{Определение}
+    \LaTeX  --- система компьютерной вёрстки, ориентированная
+    на подготовку научных документов.
+  \end{block}
+
+  \begin{itemize}
+    \item Работает по принципу "исходный код $\to$ скомпилированный документ";
+    \item Единый инструмент для статей, диссертаций и слайдов;
+    \item Основан на \TeX{} (Д.~Кнут, 1978), развивается с 1984~г.
+  \end{itemize}
+  \note{Историческую справку не раскрывать. Основной тезис --- единый инструмент для всех типов научных документов.}
+\end{frame}
+
+% ---------- Слайд 3: WYSIWYG vs WYSIWYM ----------
+\begin{frame}[label=wysiwyg]{WYSIWYG и WYSIWYM}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\textwidth}
+      \begin{block}{WYSIWYG (Word, PowerPoint)}
+        What You See Is What You Get
+        \begin{itemize}
+          \item Результат виден в процессе набора;
+          \item Оформление задаётся вручную;
+          \item Стиль изменяется при редактировании;
+          \item Формулы требуют отдельных решений.
+        \end{itemize}
+      \end{block}
+    \column{0.48\textwidth}
+      \begin{exampleblock}{WYSIWYM (\LaTeX)}
+        What You See Is What You Mean
+        \begin{itemize}
+          \item Описывается логическая структура документа;
+          \item Оформление задаётся автоматически;
+          \item Стиль сохраняется при любых правках;
+          \item Формулы --- штатный элемент разметки.
+        \end{itemize}
+      \end{exampleblock}
+  \end{columns}
+
+  \vspace{0.4em}
+  \centering
+  \emph{В \LaTeX{} содержание отделено от оформления.}
+  \note{Ключевое различие: в \LaTeX{} пользователь описывает структуру,
+  а типографика обеспечивается системой.}
+\end{frame}
+
+% ---------- Слайд 4: От статьи к слайдам ----------
+\begin{frame}[label=article-to-slides]{Как статьи, так и слайды}
+  \begin{block}{Универсальность}
+    Наличие опыта написания статей в \LaTeX{} практически гарантирует простоту освоения презентаций.
+  \end{block}
+
+  \begin{itemize}
+    \item Формулы, таблицы, \cmd{cite}, \cmd{includegraphics} работают идентично;
+    \item Различие состоит в классе документа: \texttt{article} $\to$ \texttt{beamer};
+    \item Переход к презентациям требует освоения лишь небольшого набора команд.
+  \end{itemize}
+  \note{Слайд важен для аудитории, уже использующей \LaTeX{} в статьях: оценить объём дополнительных знаний.}
+\end{frame}

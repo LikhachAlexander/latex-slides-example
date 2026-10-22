@@ -1,0 +1,31 @@
+% ============================================================
+% main.tex - главный файл презентации
+% ============================================================
+
+\documentclass[aspectratio=169, 10pt]{beamer}
+
+\input{preamble}
+
+% Быстрая итерация: компилировать только нужные кадры
+% (раскомментируйте и укажите метку нужного слайда)
+% \includeonlyframes{notes}  % пример: только слайд про \note
+
+\begin{document}
+
+% --- Титульный слайд ---
+\begin{frame}[label=title]
+  \titlepage
+  \note{Поприветствовать.}
+\end{frame}
+
+% --- Основные разделы ---
+\input{01_intro}
+\input{02_beamer_basics}
+\input{03_content}
+\input{04_animation}
+\input{05_notes}
+\input{06_tools}
+\input{07_conclusion}
+
+
+\end{document}

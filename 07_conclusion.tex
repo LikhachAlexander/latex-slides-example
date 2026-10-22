@@ -1,0 +1,40 @@
+% ---------- Слайд 16: Заключение ----------
+\begin{frame}[fragile,label=conclusion]{Заключение: данный доклад подготовлен в \LaTeX}
+  \begin{columns}[T,onlytextwidth]
+    % --- ЛЕВАЯ КОЛОНКА: КОД ---
+    \column{0.52\textwidth}
+      \textbf{Исходный код:}
+      \vspace{0.2em}
+      \inputminted[fontsize=\scriptsize, frame=single, breaklines=true]{latex}{examples/conclusion.tex}
+
+    % --- ПРАВАЯ КОЛОНКА: РЕЗУЛЬТАТ ---
+    \column{0.44\textwidth}
+      \textbf{Результат:}
+      \vspace{0.2em}
+      \input{examples/conclusion.tex}
+  \end{columns}
+
+  \vspace{1em}
+  \centering
+  \textbf{Исходные файлы презентации доступны по QR-коду:}\\
+  \vspace{0.3em}
+  % Замените ссылку на ваш реальный репозиторий
+  \qrcode[height=1.3cm]{https://github.com/username/latex-presentation-template}
+  
+  \note{Наглядно продемонстрировать, что весь дизайн, формулы,
+  анимации и таблицы на слайдах были созданы с помощью
+  исходного кода.}
+\end{frame}
+
+% ---------- Слайд 17: Вопросы ----------
+\begin{frame}[label=questions]{Вопросы}
+  \begin{center}
+    \Large
+    \textbf{Благодарю за внимание!}\\
+    \vspace{1em}
+    \normalsize
+    \textbf{Докладчик:} Александр Лихач\\
+    \textbf{Email:} smouzi45@gmail.com
+  \end{center}
+  \note{Завершить доклад и перейти к вопросам аудитории.}
+\end{frame}

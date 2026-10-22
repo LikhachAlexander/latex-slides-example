@@ -1,0 +1,96 @@
+% ---------- Слайд 5: Минимальный пример ----------
+\begin{frame}[fragile,label=minimal]{Минимальный рабочий пример}
+  % [T] означает выравнивание по верхнему краю (Top)
+  \begin{columns}[T,onlytextwidth]
+    % --- ЛЕВАЯ КОЛОНКА: КОД ---
+    \column{0.52\textwidth}
+      \textbf{Исходный код:}
+      \vspace{0.2em}
+      \inputminted[fontsize=\scriptsize, frame=single, breaklines=true]{latex}{examples/minimal.tex}
+
+    % --- ПРАВАЯ КОЛОНКА: РЕЗУЛЬТАТ ---
+    \column{0.44\textwidth}
+      \textbf{Результат:}
+      \vspace{0.2em}
+      \setbeamercolor{normal text}{fg=black, bg=white}
+      \begin{beamercolorbox}[wd=\linewidth, sep=4pt, rounded=true, shadow=true]{normal text}
+        \small
+        \begin{center}
+          \textbf{Заголовок слайда}
+        \end{center}
+        \vspace{0.5em}
+        Текст слайда.
+      \end{beamercolorbox}
+  \end{columns}
+
+  \vspace{0.5em}
+  \centering
+  \emph{Команда \cmd{usetheme} в преамбуле задает единый стиль всех слайдов.}
+  \note{Обратите внимание: \cmd{begin\{frame\}} создает слайд, а его заголовок
+  передается в фигурных скобках.}
+\end{frame}
+
+% ---------- Слайд 6: Структура проекта ----------
+\begin{frame}[fragile,label=structure]{Структура проекта}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.52\textwidth}
+      \textbf{Файлы проекта:}
+      \vspace{0.2em}
+      \inputminted[fontsize=\scriptsize, frame=single, breaklines=true]{text}{examples/tree.txt}
+
+    \column{0.44\textwidth}
+      \textbf{Рекомендации:}
+      \vspace{0.2em}
+      % Используем стандартный itemize без блока, чтобы выровнять с рамкой кода
+      \begin{itemize}
+        \item \cmd{input\{...\}} подключает содержимое;
+        \item Изображения размещаются в \texttt{images/};
+        \item Разделы --- в отдельных файлах;
+        \item Главный задает структуру.
+      \end{itemize}
+  \end{columns}
+  \note{При значительном объёме проекта единственный файл
+  затрудняет навигацию и поиск нужного раздела.}
+\end{frame}
+
+% ---------- Слайд 7: Блоки ----------
+\begin{frame}[fragile,label=blocks]{Блоки: \texttt{block}, \texttt{alertblock}}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.52\textwidth}
+      \textbf{Исходный код:}
+      \vspace{0.2em}
+      \inputminted[fontsize=\scriptsize, frame=single, breaklines=true]{latex}{examples/blocks.tex}
+
+    \column{0.44\textwidth}
+      \textbf{Результат:}
+      \vspace{0.2em}
+      % Магия: просто вставляем тот же файл!
+      \input{examples/blocks.tex} 
+  \end{columns}
+
+  \vspace{0.4em}
+  \centering
+  \emph{Блоки визуально выделяют смысловые части слайда.}
+  \note{Блоки применяются для акцентирования определений, теорем
+  и замечаний.}
+\end{frame}
+
+% ---------- Слайд 8: Колонки ----------
+\begin{frame}[fragile,label=columns]{Колонки: текст и иллюстрация}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.52\textwidth}
+      \textbf{Исходный код:}
+      \vspace{0.2em}
+      \inputminted[fontsize=\scriptsize, frame=single, breaklines=true]{latex}{examples/columns.tex}
+
+    \column{0.44\textwidth}
+      \textbf{Результат:}
+      \vspace{0.2em}
+      \input{examples/columns.tex}
+  \end{columns}
+
+  \vspace{0.4em}
+  \centering
+  \emph{Схема «текст слева, иллюстрация справа» --- типовое решение.}
+  \note{Данный шаблон применяется в большинстве слайдов с иллюстрациями.}
+\end{frame}

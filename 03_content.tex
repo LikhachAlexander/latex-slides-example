@@ -1,0 +1,38 @@
+% ---------- Слайд 9: Формулы ----------
+\begin{frame}[fragile,label=formulas]{Формулы и ссылки}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.52\textwidth}
+      \textbf{Исходный код:}
+      \vspace{0.2em}
+      \inputminted[fontsize=\scriptsize, frame=single, breaklines=true]{latex}{examples/formula.tex}
+
+    \column{0.44\textwidth}
+      \textbf{Результат:}
+      \vspace{0.2em}
+      
+      \input{examples/formula.tex}
+  \end{columns}
+  \note{Формулы из статьи переносятся в слайд без изменений.}
+\end{frame}
+
+% ---------- Слайд 10: Графика и таблицы ----------
+\begin{frame}[fragile,label=graphics]{Графика и таблицы}
+  \begin{columns}[T,onlytextwidth]
+    % --- ЛЕВАЯ КОЛОНКА: КОД ---
+    \column{0.52\textwidth}
+      \textbf{Исходный код:}
+      \vspace{0.2em}
+      \inputminted[fontsize=\scriptsize, frame=single, breaklines=true]{latex}{examples/graphics.tex}
+
+    % --- ПРАВАЯ КОЛОНКА: РЕЗУЛЬТАТ ---
+    \column{0.44\textwidth}
+      \textbf{Результат:}
+      \vspace{0.2em}
+      \input{examples/graphics.tex}
+  \end{columns}
+  
+  \vspace{0.2em}
+  \footnotesize \emph{Рекомендация: графики лучше экспортировать в PDF (векторный формат).}
+  \note{Пакет booktabs исключает вертикальные линии и использует
+  горизонтальные разделители разной толщины.}
+\end{frame}

@@ -1,0 +1,22 @@
+% ---------- Слайд 13: notes <...> ----------
+\begin{frame}[fragile,label=notes]{Заметки докладчика: \cmd{note}}
+  \begin{columns}[T,onlytextwidth]
+    % --- ЛЕВАЯ КОЛОНКА: КОД ---
+    \column{0.52\textwidth}
+      \textbf{Исходный код:}
+      \vspace{0.2em}
+      \inputminted[fontsize=\scriptsize, frame=single, breaklines=true]{latex}{examples/note_example.tex}
+
+    % --- ПРАВАЯ КОЛОНКА: РЕЗУЛЬТАТ ---
+    \column{0.44\textwidth}
+      \textbf{Результат:}
+      \vspace{0.2em}
+      
+      % Вставляем тот же файл, чтобы показать, как это выглядит на слайде
+      \begin{block}{}
+        \input{examples/note_example.tex}
+      \end{block}
+      
+  \end{columns}
+  \note{Заметки активируются командой \cmd{setbeameroption\{show notes\}} в преамбуле.}
+\end{frame}
